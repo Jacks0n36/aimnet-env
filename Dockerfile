@@ -12,9 +12,10 @@ RUN conda env create -f environment.yml && \
 
 ARG CACHEBUST
 RUN cd /home && \ 
-    git clone https://github.com/Jacks0n36/mlipenv
+    git clone https://github.com/Jacks0n36/mlipenv && \
+    git clone https://github.com/zubatyuk/aimnet2calc
 
-ENV PATH=/opt/conda/bin:$PATH
+ENV PATH=/home/aimnet2calc:/opt/conda/bin:$PATH
 ENV MLIP_SOCKET_PORT=27182
 ENV CALCULATOR=aimnet
 
