@@ -12,4 +12,4 @@ RUN conda env create -f environment.yml && \
 
 ENV PATH=/opt/conda/bin:$PATH
 
-ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "aimnet"]
+ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "aimnet", "jupyter", "lab"]

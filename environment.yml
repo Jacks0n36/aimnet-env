@@ -4,6 +4,7 @@ channels:
   - conda-forge
 dependencies:
   - python>=3.10,<3.13
+  - rdkit
   - openbabel
   - ase
   - pip
@@ -14,3 +15,4 @@ dependencies:
     - torch-cluster
     - git+https://github.com/isayevlab/aimnetcentral.git
     - git+https://github.com/zubatyuk/aimnet2calc.git
+    - git+https://github.com/McCoyGroup/Psience.git
