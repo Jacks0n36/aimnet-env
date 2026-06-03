@@ -8,11 +8,11 @@ dependencies:
   - openbabel
   - ase
   - pip
+  - jupyterlab
   - pip: 
     - --extra-index-url https://download.pytorch.org/whl/cu128
     - torch==2.8.0
     - --find-links https://data.pyg.org/whl/torch-2.8.0+cu128.html
     - torch-cluster
-    - git+https://github.com/isayevlab/aimnetcentral.git
-    - git+https://github.com/zubatyuk/aimnet2calc.git
+    - aimnet
     - git+https://github.com/McCoyGroup/Psience.git
