@@ -15,5 +15,5 @@ dependencies:
     - --find-links https://data.pyg.org/whl/torch-2.8.0+cu128.html
     - torch-cluster
     - aimnet
-    - git+https://github.com/McCoyGroup/Psience.git
-    - git+https://github.com/McCoyGroup/Peeves.git
+    - mccoygroup-psience
+    - mccoygroup-peeves
