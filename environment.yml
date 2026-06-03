@@ -16,3 +16,4 @@ dependencies:
     - torch-cluster
     - aimnet
     - git+https://github.com/McCoyGroup/Psience.git
+    - git+https://github.com/McCoyGroup/Peeves.git
