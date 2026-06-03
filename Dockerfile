@@ -14,4 +14,10 @@ RUN conda env create -f environment.yml && \
 
 ENV PATH=/opt/conda/bin:$PATH
 
+RUN printf '%s\n' \
+    '#!/bin/bash' \
+    'conda run --no-capture-output -n aimnet jupyter "$@"' \ 
+    > /usr/bin/jupyter && \
+    chmod +x /usr/bin/jupyter
+
 ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "aimnet", "jupyter", "lab"]
