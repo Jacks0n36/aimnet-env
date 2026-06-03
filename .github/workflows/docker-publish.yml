@@ -7,11 +7,11 @@ name: Docker
 
 on:
   push:
-    branches: [ "jupyterlab-features" ]
+    branches: [ "jupyterlab" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ "jupyterlab-features" ]
+    branches: [ "jupyterlab" ]
   workflow_dispatch:
 
 env:
