@@ -4,13 +4,13 @@ channels:
   - conda-forge
 dependencies:
   - python>=3.10,<3.13
+  - rdkit
   - openbabel
   - ase
   - pip
   - pip: 
-    - --extra-index-url https://download.pytorch.org/whl/cu124
-    - torch==2.4.0
-    - --find-links https://data.pyg.org/whl/torch-2.4.0+cu124.html
+    - --extra-index-url https://download.pytorch.org/whl/cu128
+    - torch==2.8.0
+    - --find-links https://data.pyg.org/whl/torch-2.8.0+cu128.html
     - torch-cluster
-    - git+https://github.com/isayevlab/aimnetcentral.git
-    - git+https://github.com/zubatyuk/aimnet2calc.git
+    - aimnet

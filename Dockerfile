@@ -5,6 +5,8 @@ RUN apt-get update && \
     apt-get -y install git gcc g++ && \
     rm -rf /var/lib/apt/lists/*
 
+ARG CACHEBUST
+
 COPY environment.yml .
 
 RUN conda env create -f environment.yml && \
